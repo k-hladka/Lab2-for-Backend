@@ -21,7 +21,12 @@
         <th>average(x,y)</th>
     </tr>
     <tr>
-        <td></td>
+        <?php
+        include_once('function for task1/pow.php');
+        ?>
+        <td>
+            <?= powFunc($_POST['field1'], $_POST['field2']); ?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
