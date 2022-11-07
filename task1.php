@@ -26,6 +26,7 @@
         include_once('functions for task1/factorial.php');
         include_once('functions for task1/my_tg.php');
         include_once('functions for task1/calc.php');
+        include_once('functions for task1/avg.php');
         ?>
         <td>
             <?= powFunc($_POST['field1'], $_POST['field2']); ?>
@@ -57,7 +58,9 @@
         <td>
             <?= calc('/', $_POST['field1'], $_POST['field2'])?>
         </td>
-        <td></td>
+        <td>
+            <?= avg($_POST['field1'], $_POST['field2'])?>
+        </td>
     </tr>
 </table>
 
