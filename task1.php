@@ -48,9 +48,15 @@
         <td>
             <?= calc('+', $_POST['field1'], $_POST['field2'])?>
         </td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+            <?= calc('-', $_POST['field1'], $_POST['field2'])?>
+        </td>
+        <td>
+            <?= calc('*', $_POST['field1'], $_POST['field2'])?>
+        </td>
+        <td>
+            <?= calc('/', $_POST['field1'], $_POST['field2'])?>
+        </td>
         <td></td>
     </tr>
 </table>
