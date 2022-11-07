@@ -38,7 +38,9 @@
         <td>
             <?= sin(floatval($_POST['field1']));?>
         </td>
-        <td></td>
+        <td>
+            <?= cos((float)$_POST['field1']);?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
