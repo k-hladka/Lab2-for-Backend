@@ -35,7 +35,9 @@
         <td>
             <?= my_tg($_POST['field1']); ?>
         </td>
-        <td></td>
+        <td>
+            <?= sin(floatval($_POST['field1']));?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
