@@ -22,12 +22,15 @@
     </tr>
     <tr>
         <?php
-        include_once('function for task1/pow.php');
+        include_once('functions for task1/pow.php');
+        include_once('functions for task1/factorial.php');
         ?>
         <td>
             <?= powFunc($_POST['field1'], $_POST['field2']); ?>
         </td>
-        <td></td>
+        <td>
+            <?= factorial($_POST['field1']); ?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
@@ -45,8 +48,8 @@
         <label for="field1">x</label>
         <label for="field2">y</label>
     </div>
-    <input type="text" id="field1" name="field1" value="1">
-    <input type="text" id="field2" name="field2" value="1">
+    <input type="text" id="field1" name="field1" value="4">
+    <input type="text" id="field2" name="field2" value="3">
     <button type="submit">=</button>
 </form>
 </body>
