@@ -41,7 +41,9 @@
         <td>
             <?= cos((float)$_POST['field1']);?>
         </td>
-        <td></td>
+        <td>
+            <?= tan((double)$_POST['field1']); ?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
