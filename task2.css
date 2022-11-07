@@ -1,0 +1,13 @@
+table, td{
+    border: 1px solid black;
+}
+tr, td, table{
+    border-collapse: collapse;
+}
+td{
+    height: 40px;
+    width: 40px;
+}
+form, div:not([id='container']){
+    margin-bottom: 10px;
+}
