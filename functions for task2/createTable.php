@@ -5,7 +5,7 @@ function createTable($n, $m){
     for($i=0; $i<$n; $i++){
         $str.='<tr>';
         for($j=0; $j<$m; $j++){
-            $arr = randNumber(3);
+            $arr = randNumber(3, 0, 255);
             $str.= "<td style='background-color:rgb($arr[0] $arr[1] $arr[2])'></td>";
         }
         $str.='</tr>';
