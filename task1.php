@@ -24,6 +24,7 @@
         <?php
         include_once('functions for task1/pow.php');
         include_once('functions for task1/factorial.php');
+        include_once('functions for task1/my_tg.php');
         ?>
         <td>
             <?= powFunc($_POST['field1'], $_POST['field2']); ?>
@@ -31,7 +32,9 @@
         <td>
             <?= factorial($_POST['field1']); ?>
         </td>
-        <td></td>
+        <td>
+            <?= my_tg($_POST['field1']); ?>
+        </td>
         <td></td>
         <td></td>
         <td></td>
