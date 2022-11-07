@@ -1,0 +1,13 @@
+html{
+    background: black;
+}
+div{
+    position: absolute;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+}
+label{
+    color: white;
+}
