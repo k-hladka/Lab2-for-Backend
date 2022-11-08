@@ -1,3 +1,6 @@
+<?php
+error_reporting(~E_ALL);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,5 +16,45 @@
     <input type="text" id="array" name="array" value="1, 2, 3, 4, 1, 2">
     <button>Отримати</button>
 </form>
+<?php
+echo 'Масив був : ';
+print_r($_POST['array']);
+echo '<br> Масив став : ';
+$ar = repeatElement($_POST['array']);
+print_r($ar);
+
+function repeatElement($str){
+    $array = breakIntoArray($str);
+    $arrayLength = count($array);
+    $resArray = [];
+
+    for($i=0; $i<$arrayLength; $i++){
+        if(!isset($array[$i]))
+            continue;
+        $z=0;
+        for($j=$i+1; $j<$arrayLength; $j++){
+            if(!isset($array[$j]))
+                continue;
+
+            if($array[$i] === $array[$j] && $z===0){
+                $resArray[] = $array[$i];
+                unset($array[$j]);
+                $z=1;
+            }
+            elseif($array[$i] === $array[$j] && $z===1)
+                unset($array[$j]);
+        }
+    }
+    return $resArray;
+}
+
+function breakIntoArray($str){
+    $array = explode(',', $str);
+    for($i=0; $i<count($array); $i++){
+        $array[$i] = trim($array[$i]);
+    }
+    return $array;
+}
+?>
 </body>
 </html>
