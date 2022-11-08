@@ -1,4 +1,5 @@
 <?php
+include_once('generatePet.php');
 function getName($namePet){
     $result = [];
     $arrayLength = count($namePet);
